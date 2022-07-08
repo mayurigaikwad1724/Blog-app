@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "e5071ac1-3853-4c0d-9b0d-640d4abb30b5",
+		"name": "blog_app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "20427719"
+	},
+	"item": [
+		{
+			"name": "localhost:8000/signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"mayuri\",\n    \"email\":\"mayuri20@navgurukul.org\",\n    \"password\":\"Mayuri@123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8000/signup"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/get_signup",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"kito\",\n    \"email\":\"kiyo20@navgurukul.org\",\n    \"password\":\"kiyo@123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8000/get_signup"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"kito\",\n    \"email\":\"kiyo20@navgurukul.org\",\n    \"password\":\"kiyo@123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8000/login"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/post_data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user_id\":\"3\",\n    \"title\":\"Html\",\n    \"text\":\"navgurukul\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8000/post_data"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/get_post/4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user_id\":\"4\",\n    \"title\":\"Html\",\n    \"text\":\"navgurukul\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8000/get_post/4"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/likedislike",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8000/getlikedislike"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/getlikedislike",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8000/getlikedislike"
+			},
+			"response": []
+		}
+	]
+}
